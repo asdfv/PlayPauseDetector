@@ -65,7 +65,7 @@ class MainActivity : ComponentActivity() {
             playPauseState = when (event.keyCode) {
                 KeyEvent.KEYCODE_MEDIA_PLAY -> "Play"
                 KeyEvent.KEYCODE_MEDIA_PAUSE -> "Pause"
-                else -> "Unknown KeyCode = $"
+                else -> "Unknown KeyCode = ${event.keyCode}"
             }
             return super.onMediaButtonEvent(session, controllerInfo, intent)
         }
